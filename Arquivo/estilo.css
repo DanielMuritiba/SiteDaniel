@@ -22,6 +22,7 @@ nav {
     padding: 30px;
     padding-left: 2%;
     padding-right: 45%;
+    background-color: rgb(55, 0, 255);
 }
 
 nav h1 {
@@ -35,12 +36,10 @@ span {
     color: #f9004d;
 }
 
-
-
 nav ul li {
     display: inline-block;
-    padding: 10px 95px;
-
+    padding: 10px 25px ;
+    
 }
 
 nav ul li a {
@@ -53,5 +52,37 @@ nav ul li a {
 nav ul li a:hover {
     color: #f9004d;
 }
-
 /*Estilo da barra de navegação página Home*/
+.links-guias{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding-left: 13%;
+    padding-right: 30%;
+
+}
+.btn1{
+ background-color: #f9004d;
+ color: #fff;
+ text-decoration: none;
+ font-weight: bold;
+ font-size: 30px;
+ border-radius: 30px;
+ transition: transform .4s;
+}
+.btn2{
+    background-color: #f9004d;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 30px;   
+    transition: transform .4s;
+}
+.btn1:hover{
+    transform: scale(1.2);
+}
+.btn2:hover{
+    transform: scale(1.2);
+}
+/*Estilo dos hiperlinks da página Home*/
