@@ -2,11 +2,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Josefin Sans', sans-serif;
 }
-
-/*.teste-fonte{
-    color: #fff;
-    font-size: small;
-    font-style: oblique;
+*.footer-fonte{
+    font-family: 'Phudu', cursive;
+}
+.btn-fonte {
+    font-family: 'Black Ops One', cursive;
+}
+.texto-fonte{
+    font-family: 'Roboto', sans-serif;
+}
+#fundo-degrade{
+    background-image: linear-gradient(to left, blue, orangered, yellow);
+    background-size: 500% 100%;
+    animation: loop-degrade 5s infinite alternate;
+}
+@keyframes loop-degrade {
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 100%;
+    }
 }
