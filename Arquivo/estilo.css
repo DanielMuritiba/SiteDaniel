@@ -20,11 +20,13 @@
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
+
 #fundo-degrade{
     background-image: linear-gradient(to right,#434343 0%, black 100%);
     background-size: 500% 100%;
     animation: loop-degrade 5s infinite alternate;
 }
+
 @keyframes loop-degrade {
     0%{
         background-position-x: 0%;
@@ -32,4 +34,15 @@
     100%{
         background-position-x: 100%;
     }
+}
+::-webkit-scrollbar{
+    width: 1em;
+}
+::-webkit-scrollbar{
+    background-image: linear-gradient(to right,#434343 0%, #292929 100%);
+
+}
+::-webkit-scrollbar-thumb{
+    background: gray;
+    border-radius: 100vw;
 }
