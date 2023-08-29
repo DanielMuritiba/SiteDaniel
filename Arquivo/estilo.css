@@ -2,94 +2,42 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Josefin Sans', sans-serif;
+}
+*.footer-fonte{
+    font-size: 14px;
 }
 
-.backgroundHome {
-    background-image: url(https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcQkrjYxSfSHeCEA7hkPy8e2JphDsfFHZVKqx-3t37E4XKr-AT7DML8IwtwY0TnZsUcQ);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
+.caixa-texto{
+    opacity: 0.7;
+    content: '';
+    position: relative;
+    background: #fff;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
-/*Estilo do background da página Home*/
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px;
-    padding-left: 2%;
-    padding-right: 45%;
-    background-color: rgb(55, 0, 255);
+.fundo-degrade{
+    background-image: linear-gradient(to right,#434343 0%, black 100%);
+    background-size: 500% 100%;
+    animation: loop-degrade 5s infinite alternate;
 }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 37px;
-    letter-spacing: 5px;
+@keyframes loop-degrade {
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 100%;
+    }
 }
-
-span {
-    color: #f9004d;
+::-webkit-scrollbar{
+    width: 1em;
 }
-
-nav ul li {
-    display: inline-block;
-    padding: 10px 25px;
+::-webkit-scrollbar{
+    background-image: linear-gradient(to right,#434343 0%, #292929 100%);
 
 }
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 22px;
+::-webkit-scrollbar-thumb{
+    background: gray;
+    border-radius: 100vw;
 }
-
-nav ul li a:hover {
-    color: #f9004d;
-}
-
-/*Estilo da barra de navegação página Home*/
-.links-guias {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 13%;
-    padding-right: 30%;
-
-}
-
-.btn1 {
-    background-color: #f9004d;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 30px;
-    border-radius: 30px;
-    transition: transform .4s;
-}
-
-.btn2 {
-    background-color: #f9004d;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 30px;
-    border-radius: 30px;
-    transition: transform .4s;
-}
-
-.btn1:hover {
-    transform: scale(1.2);
-}
-
-.btn2:hover {
-    transform: scale(1.2);
-}
-
-/*Estilo dos hiperlinks da página Home*/
